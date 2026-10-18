@@ -1,0 +1,1 @@
+# Konspekt_strat_sentbr
