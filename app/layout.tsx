@@ -62,8 +62,9 @@ const organizationJsonLd = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="ru" className={`${inter.variable} ${lora.variable}`}>
-      <body className="min-h-dvh">
+    // suppressHydrationWarning: расширения браузера (LanguageTool и др.) дописывают атрибуты в html/body.
+    <html lang="ru" className={`${inter.variable} ${lora.variable}`} suppressHydrationWarning>
+      <body className="min-h-dvh" suppressHydrationWarning>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

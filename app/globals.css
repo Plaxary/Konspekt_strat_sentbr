@@ -25,6 +25,15 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-el-wood: var(--el-wood);
+  --color-el-fire: var(--el-fire);
+  --color-el-earth: var(--el-earth);
+  --color-el-metal: var(--el-metal);
+  --color-el-water: var(--el-water);
+  --color-good: var(--good);
+  --color-good-soft: var(--good-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -55,6 +64,19 @@
   --border: oklch(0.91 0.018 65);
   --input: oklch(0.91 0.018 65);
   --ring: oklch(0.553 0.195 38.4);
+
+  /* Пять стихий — цвета как на слайдах эфира. */
+  --el-wood: oklch(0.5 0.13 150);
+  --el-fire: oklch(0.55 0.21 28);
+  --el-earth: oklch(0.48 0.09 60);
+  --el-metal: oklch(0.52 0.012 260);
+  --el-water: oklch(0.5 0.16 252);
+
+  /* Благоприятное / неблагоприятное на схемах. */
+  --good: oklch(0.5 0.12 155);
+  --good-soft: oklch(0.94 0.05 155);
+  --bad: oklch(0.53 0.2 25);
+  --bad-soft: oklch(0.94 0.04 25);
 }
 
 @layer base {

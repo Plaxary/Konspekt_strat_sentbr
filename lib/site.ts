@@ -16,9 +16,9 @@ export const site = {
 } as const
 
 export const navLinks = [
-  { href: "#problem", label: "Риски" },
-  { href: "#systems", label: "Системы" },
-  { href: "#plan", label: "Алгоритм" },
-  { href: "#spheres", label: "Сферы" },
+  { href: "#bazi", label: "Ба Цзы" },
+  { href: "#calendar", label: "Календарь" },
+  { href: "#spheres", label: "Ци Мэнь" },
+  { href: "#fengshui", label: "Фэншуй" },
   { href: "#faq", label: "FAQ" },
 ] as const

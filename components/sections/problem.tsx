@@ -52,7 +52,7 @@ export function Problem() {
           {problem.scenarios.map((scenario) => (
             <article key={scenario.title} className="rounded-2xl border bg-card p-6 md:p-8">
               <scenario.icon aria-hidden="true" className="size-10 text-primary" />
-              <Badge variant="secondary" className="mt-4 h-auto text-wrap">
+              <Badge variant="secondary" className="mt-4 h-auto whitespace-normal">
                 {scenario.tag}
               </Badge>
               <h3 className="mt-3 text-xl font-semibold">{scenario.title}</h3>

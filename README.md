@@ -29,3 +29,5 @@ npm run build    # продакшн-сборка
 - `app/opengraph-image.tsx`: генерация OG-картинки
 - `components/sections/*`: секции страницы
 - `lib/content.ts`: весь текст конспекта
+- `lib/charts-data.ts`: таблицы и схемы из презентации эфира (столпы Ба Цзы, календарь, Ци Мэнь, Фэншуй)
+- `public/images/fire-rooster.jpg`: иллюстрация из презентации эфира

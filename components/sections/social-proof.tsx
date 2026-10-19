@@ -5,7 +5,7 @@ import { socialProof } from "@/lib/content"
 
 export function SocialProof() {
   return (
-    <section aria-labelledby="proof-title" className="py-20 md:py-32">
+    <section aria-labelledby="proof-title" className="bg-muted/60 py-20 md:py-32">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <SectionHeading
           id="proof-title"

@@ -5,7 +5,7 @@ import { finalCta } from "@/lib/content"
 
 export function FinalCta() {
   return (
-    <section aria-labelledby="final-cta-title" className="py-20 md:py-32">
+    <section aria-labelledby="final-cta-title" className="bg-accent/50 py-20 md:py-32">
       <div className="mx-auto max-w-4xl px-4 text-center md:px-6">
         <p className="text-sm font-semibold tracking-wide text-primary uppercase">
           {finalCta.formulaTitle}

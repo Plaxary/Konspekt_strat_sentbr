@@ -9,7 +9,7 @@ import { faq } from "@/lib/content"
 
 export function Faq() {
   return (
-    <section id="faq" aria-labelledby="faq-title" className="scroll-mt-16 bg-muted/60 py-20 md:py-32">
+    <section id="faq" aria-labelledby="faq-title" className="scroll-mt-16 py-20 md:py-32">
       <div className="mx-auto max-w-3xl px-4 md:px-6">
         <SectionHeading id="faq-title" eyebrow={faq.eyebrow} title={faq.title} />
 
