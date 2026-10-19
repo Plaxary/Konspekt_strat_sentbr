@@ -2,13 +2,8 @@ import { Info } from "lucide-react"
 
 import { SectionHeading } from "@/components/section-heading"
 import { TelegramButton } from "@/components/telegram-button"
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
 import { Badge } from "@/components/ui/badge"
+import { Disclosure } from "@/components/ui/disclosure"
 import { qimenCompass, qimenOverview, qimenReference } from "@/lib/charts-data"
 import { spheres } from "@/lib/content"
 import { cn } from "@/lib/utils"
@@ -101,11 +96,9 @@ export function Benefits() {
           </div>
           <div>
             <h3 className="text-xl font-semibold">Справочник факторов</h3>
-            <Accordion type="single" collapsible className="mt-2">
+            <div className="mt-2">
               {qimenReference.map((group) => (
-                <AccordionItem key={group.id} value={group.id}>
-                  <AccordionTrigger className="text-base">{group.title}</AccordionTrigger>
-                  <AccordionContent>
+                <Disclosure key={group.id} title={group.title} titleClassName="font-heading text-base font-semibold">
                     <ul className="space-y-2">
                       {group.items.map((item) => (
                         <li key={item.char} className="flex gap-3">
@@ -130,10 +123,9 @@ export function Benefits() {
                         </li>
                       ))}
                     </ul>
-                  </AccordionContent>
-                </AccordionItem>
+                </Disclosure>
               ))}
-            </Accordion>
+            </div>
           </div>
         </div>
 

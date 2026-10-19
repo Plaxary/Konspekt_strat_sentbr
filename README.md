@@ -11,7 +11,10 @@
 npm install
 npm run dev      # http://localhost:3000
 npm run build    # продакшн-сборка
+npm run export:getcourse   # пересобрать HTML-блоки для GetCourse в папку getcourse/
 ```
+
+Как перенести лендинг в GetCourse — в [getcourse/README.md](getcourse/README.md).
 
 ## Перед публикацией замените плейсхолдеры
 

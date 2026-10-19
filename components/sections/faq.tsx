@@ -1,10 +1,5 @@
 import { SectionHeading } from "@/components/section-heading"
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
+import { Disclosure } from "@/components/ui/disclosure"
 import { faq } from "@/lib/content"
 
 export function Faq() {
@@ -13,16 +8,17 @@ export function Faq() {
       <div className="mx-auto max-w-3xl px-4 md:px-6">
         <SectionHeading id="faq-title" eyebrow={faq.eyebrow} title={faq.title} />
 
-        <Accordion type="single" collapsible className="mt-12 rounded-2xl border bg-card px-6">
-          {faq.items.map((item, index) => (
-            <AccordionItem key={item.q} value={`faq-${index}`}>
-              <AccordionTrigger className="text-base md:text-lg">{item.q}</AccordionTrigger>
-              <AccordionContent className="text-base text-muted-foreground">
-                {item.a}
-              </AccordionContent>
-            </AccordionItem>
+        <div className="mt-12 rounded-2xl border bg-card px-6">
+          {faq.items.map((item) => (
+            <Disclosure
+              key={item.q}
+              title={<h3 className="font-heading text-base font-semibold md:text-lg">{item.q}</h3>}
+              contentClassName="text-base text-muted-foreground"
+            >
+              {item.a}
+            </Disclosure>
           ))}
-        </Accordion>
+        </div>
       </div>
     </section>
   )
